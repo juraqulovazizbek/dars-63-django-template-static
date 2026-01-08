@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings - DayNight Admin</title>
     <script>if(localStorage.getItem("daynight-theme")==="carbon"){document.documentElement.classList.add("carbon");}</script>
-    <link rel="stylesheet" href="templatemo-daynight-style.css">
+    <link rel="stylesheet" href="{% static "templatemo-daynight-style.css" %}">
     <!--
 
 TemplateMo 608 DayNight Admin
@@ -149,6 +151,6 @@ https://templatemo.com/tm-608-daynight-admin
 
         <footer class="footer"><p>&copy; 2026 DayNight Admin. Designed by <a href="https://www.templatemo.com" target="_blank" rel="nofollow">TemplateMo</a></p></footer>
     </div>
-    <script src="templatemo-daynight-script.js"></script>
+    <script src="{% static "templatemo-daynight-script.js" %}"></script>
 </body>
 </html>

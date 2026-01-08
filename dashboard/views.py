@@ -13,3 +13,15 @@ def home_page(request: HttpRequest) -> HttpResponse:
     }
     return render(request=request, template_name='index.html', context=data)
     
+
+def projects_page(request: HttpRequest) -> HttpResponse:
+    return render(request=request, template_name='projects.html')
+    
+
+def inbox_page(request: HttpRequest) -> HttpResponse:
+    return render(request=request, template_name='inbox.html')
+    
+
+def analytics_page(request: HttpRequest) -> HttpResponse:
+    return render(request=request, template_name='analytics.html')
+    
