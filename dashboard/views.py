@@ -15,13 +15,37 @@ def home_page(request: HttpRequest) -> HttpResponse:
     
 
 def projects_page(request: HttpRequest) -> HttpResponse:
-    return render(request=request, template_name='projects.html')
+    data = {
+        'user': {
+            'name': 'Ali'
+        }
+    }
+    return render(request=request, template_name='projects.html', context=data)
     
 
 def inbox_page(request: HttpRequest) -> HttpResponse:
-    return render(request=request, template_name='inbox.html')
+    data = {
+        'user': {
+            'name': 'Ali'
+        }
+    }
+    return render(request=request, template_name='inbox.html', context=data)
     
 
 def analytics_page(request: HttpRequest) -> HttpResponse:
-    return render(request=request, template_name='analytics.html')
+    data = {
+        'user': {
+            'name': 'Ali'
+        }
+    }
+    return render(request=request, template_name='analytics.html', context=data)
+
+
+def settings_page(request: HttpRequest) -> HttpResponse:
+    data = {
+        'user': {
+            'name': 'Ali'
+        }
+    }
+    return render(request=request, template_name='settings.html', context=data)
     
